@@ -1,0 +1,7 @@
+@media screen (min-width: 768px) {
+    article{
+        grid-template-rows: 2vh;
+    
+        
+    }
+}
