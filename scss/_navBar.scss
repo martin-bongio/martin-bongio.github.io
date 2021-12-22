@@ -1,0 +1,30 @@
+.gradientNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logoCon{
+        padding: 5px; 
+        width: 10%;
+        img{ 
+            border-radius: 100%;
+            width: 100%; }
+        img:hover{
+            box-shadow: 3px 3px 4px $terciario;
+            cursor: pointer;
+        }
+    }
+}   
+.lista{
+    display: flex;
+    list-style: none;
+    .nav-item{
+        .nav-link{
+            color: $terciario;
+            font-size: 1.5em;
+        }
+        .nav-link:hover{
+            background-color: $secundario;
+            border-radius: 5px;
+        }
+    }
+}

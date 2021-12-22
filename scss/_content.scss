@@ -1,0 +1,81 @@
+.colorFond{
+    background-color: $primario;
+}
+
+.contArticulo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.contArticulo2{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c2 c3 c4";
+    margin-left: 7%;
+}
+
+.paddIguales{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.borde{
+    border-style: inset;
+    border-color: $secundario;
+}
+
+
+.c1{
+    grid-area: c1;
+}
+
+.c2{
+    grid-area: c2;
+}
+
+.c3{
+    grid-area: c3;
+}
+
+.c4{
+    grid-area: c4;
+}
+
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.h-auto{
+    height: 90%;
+}
+
+.img{
+    border-radius: 25px 5px;
+    img:hover{
+        box-shadow: 3px 3px 4px $terciario;
+        cursor: pointer; 
+    }
+}
+
+.hr{
+    background-color: $secundario;
+    border-style: solid;
+}

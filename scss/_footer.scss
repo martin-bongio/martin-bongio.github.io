@@ -1,0 +1,39 @@
+.contFooter{
+    .listaFooter{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 80%;
+            border-radius: 30px;
+        }
+        img:hover{
+            box-shadow: 4px 4px 4px $terciario;
+            cursor: pointer;
+        }
+    }
+}    
+
+
+.fb{
+    grid-area: fb;
+}
+
+.in{
+    grid-area: in;
+}
+
+.tw{
+    grid-area: tw;
+}
+
+.fb, .in, .tw{
+    width: 5%;
+    margin: 5px;
+}
+
+a:hover{
+    transform: translate(10px);
+    cursor: pointer;
+}
