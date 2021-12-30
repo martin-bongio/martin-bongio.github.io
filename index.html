@@ -17,12 +17,20 @@
 </head>
 <body class="colorFond">
     <header class="gradientNav">
-        <div class="logoCon">
+        <div class="logoCon container-fluid">
             <a href="index.html"><img src="./img/logo1.png" alt="El Vino"></a> 
         </div>
-        <div>   
-            <nav class="navBar">
-                <ul class="lista">
+        <div class="navbar navbar-expand-lg navbar-light " id="navbarNav">  
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 lista">
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
@@ -36,13 +44,14 @@
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
+            </div>
             </nav>
         </div>  
     </header>
     <hr class="hr">
     <main>
         <Section>
-            <article id="historia" class="contArticulo">
+            <article id="historia" class="contArticulo media">
                 <div id="carouselExampleFade" class="w-90 carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -71,59 +80,69 @@
                 </div>
             </article>
             <hr class="hr">
-            <article class="contArticulo2">
-                <div class="card c1" style="width: 18rem;">
-                    <img src="./img/vinotinto.jpg" class="card-img-top" alt="Vino Tinto">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Vino Tinto</h5>
-                        <p class="card-text sizeLetra">Es aquel procede de mostos de uvas tintas. Mediante un proceso de elaboración difunde la materia colorante que contienen los hollejos de la uva. Posteriormente, ese vino se envejece y en función del tiempo que pase tanto en barrica como en botella pueden obtenerse jóvenes, crianzas, reservas o grandes reservas.</p>
+            <article class="contArticulo3 media2">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/vinotinto.jpg" class="card-img-top" alt="Vino Tinto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Vino Tinto</h5>
+                                <p class="card-text">Es aquel procede de mostos de uvas tintas. Mediante un proceso de elaboración difunde la materia colorante que contienen los hollejos de la uva. Posteriormente, ese vino se envejece y en función del tiempo que pase tanto en barrica como en botella pueden obtenerse jóvenes, crianzas, reservas o grandes reservas.</p>
+                            </div>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item">Malbec, Cabernet Sauvignon, Merlot, Pinot Noir...</li>
+                                <li class="list-group-item">El tiempo en barrica va desde los 6 a 24 meses.</li>
+                                <li class="list-group-item">La graduación alcohólica varía entre los 8° y 14° y algunos excepcionalmente 15°.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush sizeLetra">
-                        <li class="list-group-item">Malbec, Cabernet Sauvignon, Merlot, Pinot Noir...</li>
-                        <li class="list-group-item">El tiempo en barrica va desde los 6 a 24 meses.</li>
-                        <li class="list-group-item">La graduación alcohólica varía entre los 8° y 14° y algunos excepcionalmente 15°.</li>
-                    </ul>
-                </div>
-                <div class="card c2" style="width: 18rem;">
-                    <img src="./img/blanco.jpg" class="card-img-top" alt="Vino blanco">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Vino Blanco</h5>
-                        <p class="card-text sizeLetra">Se obtiene por la fermentación alcohólica de la pulpa no coloreada de uvas. Las uvas con las que se elabora el vino blanco pueden tener una piel de color blanco o negro. Con ello, se  busca mantener un color amarillo transparente en el producto final.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/blanco.jpg" class="card-img-top" alt="Vino blanco">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Vino Blanco</h5>
+                                <p class="card-text ">Se obtiene por la fermentación alcohólica de la pulpa no coloreada de uvas. Las uvas con las que se elabora el vino blanco pueden tener una piel de color blanco o negro. Con ello, se  busca mantener un color amarillo transparente en el producto final.</p>
+                            </div>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item">Chardonnay, Sauvignon blanc, Moscato…</li>
+                                <li class="list-group-item">El tiempo en barrica es de 6 meses.</li>
+                                <li class="list-group-item">La graduación alcohólica varía de los Blanco ligeros entre 8° y 11° y los Blancos con cuerpo 15°.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush sizeLetra">
-                        <li class="list-group-item">Chardonnay, Sauvignon blanc, Moscato…</li>
-                        <li class="list-group-item">El tiempo en barrica es de 6 meses.</li>
-                        <li class="list-group-item">La graduación alcohólica varía de los Blanco ligeros entre 8° y 11° y los Blancos con cuerpo 15°.</li>
-                    </ul>
-                </div>
-                <div class="card c3" style="width: 18rem;">
-                    <img src="./img/espumante.jpg" class="card-img-top" alt="Vino Espumante">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Vino Espumante</h5>
-                        <p class="card-text sizeLetra">Son vinos con gas disuelto. El gas se consigue haciendo que haya una segunda fermentación dentro de la botella cerrada, la segunda fermentación en botella se puede conseguir añadiendo azúcar, embotellando el vino antes de que haya terminado de fermentar o cerrando la cuba de fermentación antes de que termine esta.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/espumante.jpg" class="card-img-top" alt="Vino Espumante">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Vino Espumante</h5>
+                            <p class="card-text ">Son vinos con gas disuelto. El gas se consigue haciendo que haya una segunda fermentación dentro de la botella cerrada, la segunda fermentación en botella se puede conseguir añadiendo azúcar, embotellando el vino antes de que haya terminado de fermentar o cerrando la cuba de fermentación antes de que termine esta.
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item">Nature, Brut Nature, Extra Brut, Brut, Demisec y Dulce.</li>
+                            <li class="list-group-item">El tiempo en botella va desde los 9 meses hasta 24 o 36 meses.</li>
+                            <li class="list-group-item">La temperatura de servicio recomendada es de 6° a 9°C.</li>
+                        </ul>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush sizeLetra">
-                        <li class="list-group-item">Nature, Brut Nature, Extra Brut, Brut, Demisec y Dulce.</li>
-                        <li class="list-group-item">El tiempo en botella va desde los 9 meses hasta 24 o 36 meses.</li>
-                        <li class="list-group-item">La temperatura de servicio recomendada es de 6° a 9°C.</li>
-                    </ul>
-                </div>
-                <div class="card c4" style="width: 18rem;">
-                    <img src="./img/dulce.jpg" class="card-img-top" alt="Vino Dulce">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Vino Dulce</h5>
-                        <p class="card-text sizeLetra">Es aquel que tiene una concentración de azúcar residual superior a 45 gramos por litro de vino. Ya sea porque la concentración de azúcar es naturalmente muy alta, y las levaduras no pueden procesarla toda, o porque se ha conseguido que haya una mayor proporción de azúcar en la mezcla.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/dulce.jpg" class="card-img-top" alt="Vino Dulce">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Vino Dulce</h5>
+                            <p class="card-text ">Es aquel que tiene una concentración de azúcar residual superior a 45 gramos por litro de vino. Ya sea porque la concentración de azúcar es naturalmente muy alta, y las levaduras no pueden procesarla toda, o porque se ha conseguido que haya una mayor proporción de azúcar en la mezcla.</p>
+                        </div>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item">Vinos Blancos dulces y vinos Tintos dulces.</li>
+                            <li class="list-group-item">Estos vinos poseen un sabor dulce apropiado para acompañar diversos postres.</li>
+                            <li class="list-group-item">La graduación alcohólica varía entre los 15° y 22° como máximo.</li>
+                        </ul>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush sizeLetra">
-                        <li class="list-group-item">Vinos Blancos dulces y vinos Tintos dulces.</li>
-                        <li class="list-group-item">Estos vinos poseen un sabor dulce apropiado para acompañar diversos postres.</li>
-                        <li class="list-group-item">La graduación alcohólica varía entre los 15° y 22° como máximo.</li>
-                    </ul>
                 </div>
-            </article>
+            </article> 
     <hr class="hr">
-            <article class="contArticulo"> 
+            <article class="contArticulo media"> 
                 <div>
                     <img src="./img/mapavino-2.jpg" alt="Mapa de Vinos"  class="w-50 img">
                 </div>
