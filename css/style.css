@@ -55,7 +55,7 @@
   width: 90%; }
 
 .h-auto {
-  height: 90%; }
+  height: auto; }
 
 .img {
   border-radius: 25px 5px; }
@@ -66,6 +66,17 @@
 .hr {
   background-color: #d66080;
   border-style: solid; }
+
+@media screen and (max-width: 768px) {
+  .media {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto); }
+  .media2 img {
+    display: none; } }
+
+.contArticulo3 {
+  padding: 0 15%; }
 
 .gradientNav {
   display: flex;

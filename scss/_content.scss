@@ -64,7 +64,7 @@
 }
 
 .h-auto{
-    height: 90%;
+    height: auto;
 }
 
 .img{
@@ -79,3 +79,21 @@
     background-color: $secundario;
     border-style: solid;
 }
+
+
+@media screen and (max-width: 768px) {
+    .media{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+    }
+    .media2{
+        img{
+            display: none;
+        }
+    }
+}
+
+.contArticulo3{
+    padding: 0 15%;
+} 
